@@ -15,11 +15,9 @@ pip install -r requirements/requirements-mujoco.txt
 
 ## Train
 ```bash
+python her.py --seed 12 --n_episode 300000 --n_bits 35 --device cuda:0 --her_strategy final
+[optional]
 cd ~/slurm
 chmod +x run_reward_shaping.sh
 ./run_reward_shaping.sh
-```
-
-```bash
-python her.py --seed 12 --n_episode 300000 --n_bits 35 --device cuda:0 --her_strategy final
 ```
